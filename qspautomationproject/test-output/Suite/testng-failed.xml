@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="ChromeTest(failed)">
+    <parameter name="password" value="manager"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value=" http://127.0.0.1/login.do;jsessionid=2nuhsw0s9mqe6"/>
+    <parameter name="username" value="admin"/>
+    <classes>
+      <class name="testngflags.ActiTimeLogin">
+        <methods>
+          <include name="validLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testngflags.ActiTimeLogin -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" name="firefoxTest(failed)">
+    <parameter name="password" value="manager"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="url" value="http://laptop-smc8hiai/login.do"/>
+    <parameter name="username" value="admin"/>
+    <classes>
+      <class name="testngflags.ActiTimeLogin">
+        <methods>
+          <include name="validLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testngflags.ActiTimeLogin -->
+    </classes>
+  </test> <!-- firefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
